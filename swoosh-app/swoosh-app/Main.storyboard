@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="Gvp-Qq-Nit">
             <objects>
-                <viewController id="wHO-yD-gnW" customClass="ViewController" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wHO-yD-gnW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWI-C0-ZzA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-196" y="-578.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="O7g-uv-t3F">
             <objects>
-                <viewController id="bh8-Vy-B6t" sceneMemberID="viewController">
+                <viewController id="bh8-Vy-B6t" customClass="LeagueVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rTw-8p-oQG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="488.40579710144931" y="-579.91071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillsVC-->
         <scene sceneID="Fzi-3h-dwI">
             <objects>
-                <viewController id="PAN-Qj-URo" sceneMemberID="viewController">
+                <viewController id="PAN-Qj-URo" customClass="SkillsVC" customModule="swoosh_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5uD-sG-1YQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
