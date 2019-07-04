@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RB6-no-gij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="-578.57142857142856"/>
+            <point key="canvasLocation" x="-310" y="-580"/>
         </scene>
         <!--LeagueVC-->
         <scene sceneID="O7g-uv-t3F">
@@ -109,6 +109,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="bh8-Vy-B6t" eventType="touchUpInside" id="i3N-YR-Uwl"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EL0-3W-JGP">
                                 <rect key="frame" x="20" y="200.66666666666663" width="374" height="182"/>
@@ -194,11 +197,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Myl-IW-Mtn"/>
                     </view>
+                    <connections>
+                        <segue destination="PAN-Qj-URo" kind="show" identifier="SkillsVCSegue" id="k7l-wa-DGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJJ-wp-cAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="esm-7B-2zf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="488.40579710144931" y="-579.91071428571422"/>
+            <point key="canvasLocation" x="386" y="-580"/>
         </scene>
         <!--SkillsVC-->
         <scene sceneID="Fzi-3h-dwI">
@@ -285,7 +291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxV-h8-Liy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1197" y="-580"/>
+            <point key="canvasLocation" x="1157" y="-580"/>
         </scene>
     </scenes>
     <resources>
