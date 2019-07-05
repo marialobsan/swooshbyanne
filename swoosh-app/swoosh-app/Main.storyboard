@@ -98,7 +98,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="GNH-jw-4uB">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JI-ph-0YI" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JI-ph-0YI" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                 <rect key="frame" x="20" y="666" width="374" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.6008197623" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -126,6 +126,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTapped:" destination="bh8-Vy-B6t" eventType="touchUpInside" id="mWL-UY-xo9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcZ-Pk-suh" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66.000000000000028" width="374" height="50"/>
@@ -137,6 +140,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomenTapped:" destination="bh8-Vy-B6t" eventType="touchUpInside" id="cgw-Pu-PP5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEw-e3-Qhy" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="132.00000000000003" width="374" height="50"/>
@@ -148,6 +154,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="bh8-Vy-B6t" eventType="touchUpInside" id="LI7-xt-irB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="Myl-IW-Mtn"/>
                     </view>
                     <connections>
+                        <outlet property="nxtBtn" destination="9JI-ph-0YI" id="1oA-1d-FhM"/>
                         <segue destination="PAN-Qj-URo" kind="show" identifier="SkillsVCSegue" id="k7l-wa-DGO"/>
                     </connections>
                 </viewController>
